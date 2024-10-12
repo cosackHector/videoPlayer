@@ -140,7 +140,7 @@ function VideoComponent(inputPlaylist) {
     inputPlaylist.videos.forEach((video) => {
         // создаем контейнер для каждого видео
         const container = createElement('div', ['container_video']);
-        // создем сам жлемент видео
+        // создем элемент видео
         const videoElement = createElement('video', ['video'], {src: video.fileUrl, controls: true});
         // добавляем в дерево
         container.append(videoElement,HeaderVideoContainer(video.title))
